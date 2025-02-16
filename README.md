@@ -5,41 +5,46 @@ The League of Legends Lane Assistant is a desktop application built using Python
 
 Features
 Role Selection: Users can choose from five roles: Support, ADC (Attack Damage Carry), Mid, Jungle, and Top.
+
 Champion Selection: Based on the selected role, users can pick from a list of champions categorized into Tanks, Mages, Enchanters, Assassins, and Ranged.
+
 User-Friendly Interface: The application features a visually appealing layout with icons and background images to enhance user experience.
+
 Exit Functionality: Users can exit the application easily with a dedicated button.
+
 Installation
 To run this application, ensure you have Python installed on your machine. You will also need the Pillow library for image handling.
 
 Clone the repository:
 bash
 
-
 git clone https://github.com/yourusername/league-lane-assistant.git
-   cd league-lane-assistant
+cd league-lane-assistant
+
 Install required packages:
 bash
-
-
 pip install Pillow
+
 Run the application:
 bash
-
-
 python main.py
+
 Functionality
 The application consists of several functions, each serving a specific purpose. Below is a breakdown of the main functions included in the code:
 
 1. Role()
 Purpose: Opens a new window for role selection.
 Functionality: Displays buttons for each role (Support, ADC, Mid, Jungle, Top). When a user clicks on a role button, it calls the supp_Champ(role) function with the selected role as an argument.
+
 2. supp_Champ(role)
 Purpose: Opens a new window for champion selection based on the selected role.
 Parameters: role - A string representing the selected role.
 Functionality: Displays a list of champions categorized by their types (Tanks, Mages, Enchanters, Assassins, Ranged). It also allows users to select a champion from the respective dropdown menu.
+
 3. show_champion()
 Purpose: Displays the selected champion in the champion selection window.
 Functionality: When the "Choose" button is clicked, this function retrieves the currently selected champion from the dropdown and displays it on the screen.
+
 Code Structure
 The main code structure consists of the following key components:
 
